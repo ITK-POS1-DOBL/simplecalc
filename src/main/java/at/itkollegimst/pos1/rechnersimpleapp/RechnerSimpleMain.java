@@ -8,10 +8,6 @@ package at.itkollegimst.pos1.rechnersimpleapp;
 import at.itkollegimst.pos1.rechnersimpleapp.dto.CalcDTO;
 import at.itkollegimst.pos1.rechnersimpleapp.ui.IUserInterface;
 import at.itkollegimst.pos1.rechnersimpleapp.ui.TextUserInterface;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.StringReader;
 
 /**
  *
