@@ -10,5 +10,5 @@ package at.itkollegimst.pos1.rechnersimpleapp.engine;
  * @author intruder
  */
 public interface ICalcMethod {
-    public double doCalculation();
+    public double doCalculation(Double[] numbers);
 }

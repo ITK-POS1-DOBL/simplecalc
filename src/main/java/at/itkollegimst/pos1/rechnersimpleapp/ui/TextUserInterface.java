@@ -6,6 +6,8 @@
 package at.itkollegimst.pos1.rechnersimpleapp.ui;
 
 import at.itkollegimst.pos1.rechnersimpleapp.dto.CalcDTO;
+import at.itkollegimst.pos1.rechnersimpleapp.engine.AddCalcMethod;
+import at.itkollegimst.pos1.rechnersimpleapp.engine.ICalcMethod;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -63,7 +65,8 @@ public class TextUserInterface implements IUserInterface {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
  
-    String readSingleUserInput(){
-        return "!!!TODO!!!";
+    private ICalcMethod readSingleUserInput(){
+        ICalcMethod calcMethod = new AddCalcMethod();
+        return calcMethod;
     }
 }
