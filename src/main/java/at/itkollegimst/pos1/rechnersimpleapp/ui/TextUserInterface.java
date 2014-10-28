@@ -22,6 +22,10 @@ public class TextUserInterface implements IUserInterface {
     
     @Override
     public void init() {
+        
+        // Create CalcDTO instance for userData
+        userData = new CalcDTO();
+        
         // Create input reader
         textIn = new BufferedReader(new InputStreamReader(System.in));
         
@@ -47,14 +51,7 @@ public class TextUserInterface implements IUserInterface {
       
         userData.setCalcMethod(readSingleUserInput());
         // read in calc method
-        try {
-          String method = textIn.readLine();
-        }
-        catch (IOException e) {
-            System.out.println();
-            System.out.println("There was an error reading the input!");
-            System.out.println();
-        }
+        
         
         return userData;
 
@@ -65,8 +62,18 @@ public class TextUserInterface implements IUserInterface {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
  
-    private ICalcMethod readSingleUserInput(){
-        ICalcMethod calcMethod = new AddCalcMethod();
-        return calcMethod;
+    private String readSingleUserInput(){
+        String inString = "";
+        
+        try {
+          inString = textIn.readLine();
+        }
+        catch (IOException e) {
+            System.out.println();
+            System.out.println("There was an error reading the input!");
+            System.out.println();
+        }
+        
+        return inString;
     }
 }

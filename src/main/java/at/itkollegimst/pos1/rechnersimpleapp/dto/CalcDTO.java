@@ -5,8 +5,6 @@
  */
 package at.itkollegimst.pos1.rechnersimpleapp.dto;
 
-import at.itkollegimst.pos1.rechnersimpleapp.engine.ICalcMethod;
-
 /**
  * Data Transfer Object for communication with user interface
  * @author intruder
@@ -14,7 +12,7 @@ import at.itkollegimst.pos1.rechnersimpleapp.engine.ICalcMethod;
 public class CalcDTO {
    private double firstNum;
    private double secondNum;
-   private ICalcMethod calcMethod;
+   private String calcMethod;
    private Boolean quit;
    
    public double getFirstNum() {
@@ -41,11 +39,11 @@ public class CalcDTO {
         this.quit = quit;
     }
 
-    public void setCalcMethod(ICalcMethod calcMethod) {
+    public void setCalcMethod(String calcMethod) {
         this.calcMethod = calcMethod;
     }
 
-    public ICalcMethod getCalcMethod() {
+    public String getCalcMethod() {
         return calcMethod;
     }
    
