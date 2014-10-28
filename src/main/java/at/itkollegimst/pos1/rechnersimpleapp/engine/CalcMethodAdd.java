@@ -9,7 +9,7 @@ package at.itkollegimst.pos1.rechnersimpleapp.engine;
  *
  * @author intruder
  */
-public class AddCalcMethod implements ICalcMethod {
+public class CalcMethodAdd implements ICalcMethod {
 
     @Override
     public double doCalculation(Double[] numbers) {

@@ -6,7 +6,7 @@
 package at.itkollegimst.pos1.rechnersimpleapp.ui;
 
 import at.itkollegimst.pos1.rechnersimpleapp.dto.CalcDTO;
-import at.itkollegimst.pos1.rechnersimpleapp.engine.AddCalcMethod;
+import at.itkollegimst.pos1.rechnersimpleapp.engine.CalcMethodAdd;
 import at.itkollegimst.pos1.rechnersimpleapp.engine.ICalcMethod;
 import java.io.BufferedReader;
 import java.io.IOException;
