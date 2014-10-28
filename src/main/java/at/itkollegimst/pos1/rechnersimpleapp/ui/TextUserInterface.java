@@ -49,9 +49,14 @@ public class TextUserInterface implements IUserInterface {
     @Override
     public CalcDTO getUserData() {
       
-        userData.setCalcMethod(readSingleUserInput());
         // read in calc method
+        userData.setCalcMethod(readSingleUserInput());
         
+        // read first number
+        userData.setFirstNum(Double.parseDouble(readSingleUserInput()));
+        
+        // read second number
+        userData.setSecondNum(Double.parseDouble(readSingleUserInput()));
         
         return userData;
 

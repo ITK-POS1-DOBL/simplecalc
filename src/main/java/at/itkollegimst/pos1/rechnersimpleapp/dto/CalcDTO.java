@@ -13,7 +13,7 @@ public class CalcDTO {
    private double firstNum;
    private double secondNum;
    private String calcMethod;
-   private Boolean quit;
+   private Boolean quit = false;
    
    public double getFirstNum() {
        return firstNum;
