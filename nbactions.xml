@@ -10,7 +10,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
             </goals>
             <properties>
-                <exec.args>-classpath %classpath at.itkollegimst.pos1.rechnersimpleapp.RechnerSimpleMain</exec.args>
+                <exec.args>-classpath %classpath org.doblander.itk.pos1.simplecalc.SimpleCalcMain</exec.args>
                 <exec.executable>java</exec.executable>
             </properties>
         </action>

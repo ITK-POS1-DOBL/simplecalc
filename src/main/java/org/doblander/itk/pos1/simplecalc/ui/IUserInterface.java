@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package at.itkollegimst.pos1.rechnersimpleapp.ui;
+package org.doblander.itk.pos1.simplecalc.ui;
 
-import at.itkollegimst.pos1.rechnersimpleapp.dto.CalcDTO;
+import org.doblander.itk.pos1.simplecalc.dto.CalcDTO;
 
 /**
  *

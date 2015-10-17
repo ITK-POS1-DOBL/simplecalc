@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package at.itkollegimst.pos1.rechnersimpleapp;
+package org.doblander.itk.pos1.simplecalc;
 
-import at.itkollegimst.pos1.rechnersimpleapp.dto.CalcDTO;
-import at.itkollegimst.pos1.rechnersimpleapp.engine.CalcMethodAdd;
-import at.itkollegimst.pos1.rechnersimpleapp.engine.ICalcMethod;
-import at.itkollegimst.pos1.rechnersimpleapp.ui.IUserInterface;
-import at.itkollegimst.pos1.rechnersimpleapp.ui.TextUserInterface;
+import org.doblander.itk.pos1.simplecalc.dto.CalcDTO;
+import org.doblander.itk.pos1.simplecalc.engine.CalcMethodAdd;
+import org.doblander.itk.pos1.simplecalc.engine.ICalcMethod;
+import org.doblander.itk.pos1.simplecalc.ui.IUserInterface;
+import org.doblander.itk.pos1.simplecalc.ui.TextUserInterface;
 
 /**
  *
  * @author intruder
  */
-public class RechnerSimpleMain {
+public class SimpleCalcMain {
 
     /**
      * @param args the command line arguments

@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package at.itkollegimst.pos1.rechnersimpleapp.ui;
+package org.doblander.itk.pos1.simplecalc.ui;
 
-import at.itkollegimst.pos1.rechnersimpleapp.dto.CalcDTO;
-import at.itkollegimst.pos1.rechnersimpleapp.engine.CalcMethodAdd;
-import at.itkollegimst.pos1.rechnersimpleapp.engine.ICalcMethod;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
+import org.doblander.itk.pos1.simplecalc.dto.CalcDTO;
 
 /**
  *
