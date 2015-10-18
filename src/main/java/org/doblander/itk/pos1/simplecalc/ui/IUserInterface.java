@@ -5,7 +5,7 @@
  */
 package org.doblander.itk.pos1.simplecalc.ui;
 
-import org.doblander.itk.pos1.simplecalc.dto.CalcDTO;
+import org.doblander.itk.pos1.simplecalc.service.CalcDTO;
 
 /**
  *
@@ -14,7 +14,9 @@ import org.doblander.itk.pos1.simplecalc.dto.CalcDTO;
 public interface IUserInterface {
   
     public void init();
+    public void welcome();
     public void tearDown();
     public CalcDTO getUserData();
     public void outputErrorMsg(String errorMsg);
+	
 }

@@ -9,7 +9,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import org.doblander.itk.pos1.simplecalc.dto.CalcDTO;
+import org.doblander.itk.pos1.simplecalc.service.CalcDTO;
 
 /**
  *
@@ -21,6 +21,11 @@ public class TextUserInterface implements IUserInterface {
     
     @Override
     public void init() {
+    	
+    }
+    
+    @Override
+    public void welcome() {
         
         // Create CalcDTO instance for userData
         userData = new CalcDTO();
