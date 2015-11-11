@@ -7,6 +7,8 @@ package org.doblander.itk.pos1.simplecalc.app;
 
 import org.doblander.itk.pos1.simplecalc.engine.BasicCalculator;
 import org.doblander.itk.pos1.simplecalc.engine.ICalculator;
+import org.doblander.itk.pos1.simplecalc.engine.IStatisticRepository;
+import org.doblander.itk.pos1.simplecalc.engine.SimpleStatisticsDBRepository;
 import org.doblander.itk.pos1.simplecalc.service.CalcDTO;
 import org.doblander.itk.pos1.simplecalc.ui.IUserInterface;
 import org.doblander.itk.pos1.simplecalc.ui.TextUserInterface;
@@ -26,6 +28,7 @@ public class SimpleCalcMain {
         double result = 0.0;
         IUserInterface ui = new TextUserInterface();
         ICalculator basicCalc = new BasicCalculator();
+        IStatisticRepository statRepo = new SimpleStatisticsDBRepository();
         double[] numbers = {0.0, 0.0};
         
         ui.init();
@@ -38,7 +41,9 @@ public class SimpleCalcMain {
          
         switch (userData.getCalcMethod()) {
             case
-                    "add": result = basicCalc.add(numbers);
+                    "add": 
+                    	result = basicCalc.add(numbers);
+                    	statRepo.save(numbers, "add");
         }
         
         // FIXME: should use "ui" -> add output method in ui!
