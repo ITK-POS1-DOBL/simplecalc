@@ -6,3 +6,5 @@ org.eclipse.m2e.core.prefs
 org.eclipse.ltk.core.refactoring.prefs
 *.log
 sample
+/org.doblander.itk.pos1.simplecalc.iml
+/.idea/
